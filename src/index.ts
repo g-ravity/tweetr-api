@@ -42,6 +42,6 @@ mongoose
   .then(() => {
     console.log('Connected to MongoDB');
     server.applyMiddleware({ app, path: server.graphqlPath });
-    app.listen({ port: 4000 }, () => console.log(`Server ready at http://localhost:4000${server.graphqlPath}`));
+    app.listen({ port: keys.port }, () => console.log(`Server ready at ${keys.port}`));
   })
   .catch(() => console.log('Error while connecting to MongoDB'));

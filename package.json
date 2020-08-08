@@ -4,6 +4,9 @@
   "description": "API for a twitter clone, made as an internship task",
   "main": "dist/index.js",
   "private": true,
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "build": "tsc --build",
     "dev": "nodemon -r dotenv/config src/index.ts",
