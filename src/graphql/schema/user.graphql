@@ -1,0 +1,22 @@
+# GraphQL Input Types
+input SignupUserInput {
+  name: String!
+  handle: String!
+  password: String!
+}
+
+input LoginUserInput {
+  handle: String!
+  password: String!
+}
+
+# GraphQL Output Types
+type User {
+  name: String!
+  handle: String!
+}
+
+type UserWithToken {
+  user: User!
+  accessToken: String!
+}
