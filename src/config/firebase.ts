@@ -1,17 +1,17 @@
 import * as firebase from 'firebase-admin';
-import * as serviceAccount from '../serviceAccountKey.json';
+import keys from './keys';
 
 const params = {
-  type: serviceAccount.type,
-  projectId: serviceAccount.project_id,
-  privateKeyId: serviceAccount.private_key_id,
-  privateKey: serviceAccount.private_key,
-  clientEmail: serviceAccount.client_email,
-  clientId: serviceAccount.client_id,
-  authUri: serviceAccount.auth_uri,
-  tokenUri: serviceAccount.token_uri,
-  authProviderX509CertUrl: serviceAccount.auth_provider_x509_cert_url,
-  clientC509CertUrl: serviceAccount.client_x509_cert_url
+  type: keys.fbType,
+  projectId: keys.fbProjectId,
+  privateKeyId: keys.fbPrivateKeyId,
+  privateKey: keys.fbPrivateKey,
+  clientEmail: keys.fbClientEmail,
+  clientId: keys.fbClientId,
+  authUri: keys.fbAuthUri,
+  tokenUri: keys.fbTokenUri,
+  authProviderX509CertUrl: keys.fbAuthProvider,
+  clientC509CertUrl: keys.fbClientCert
 };
 
 firebase.initializeApp({

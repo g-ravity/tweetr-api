@@ -15,6 +15,5 @@ Node &amp; GraphQL API for a twitter clone, built for a hackathon assignment
 ### Steps to run the project
 
 - Inside the project directory, run `yarn` to install all the dependencies
-- Add a .env file in the root directory with MongoDB credentials, Firebase storage credentials & JWT Secret
-- Inside the src directory, add a serviceAccountKey.json file with firebase service account credentials
+- Add a .env file in the root directory with all the credentials. Check the src/types/General.types.ts file for the field names
 - Now run `yarn dev` at the root directory to start the project
