@@ -20,7 +20,7 @@ export const createTweet = (tweetData: TweetArgs, userHandle: IUser['handle']): 
   });
 
   if (tweetData.fileName)
-    tweet.imageURL = keys.firebaseStorageURL + tweetData.fileName.replace('/', '%2F') + '?alt=media&token=' + keys.firebaseToken;
+    tweet.imageURL = keys.firebaseStorageUrl + tweetData.fileName.replace('/', '%2F') + '?alt=media&token=' + keys.firebaseToken;
 
   return tweet.save();
 };

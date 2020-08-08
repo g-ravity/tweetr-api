@@ -5,7 +5,7 @@ const params = {
   type: keys.fbType,
   projectId: keys.fbProjectId,
   privateKeyId: keys.fbPrivateKeyId,
-  privateKey: keys.fbPrivateKey,
+  privateKey: keys.fbPrivateKey.replace(/\\n/g, '\n'),
   clientEmail: keys.fbClientEmail,
   clientId: keys.fbClientId,
   authUri: keys.fbAuthUri,
@@ -16,7 +16,7 @@ const params = {
 
 firebase.initializeApp({
   credential: firebase.credential.cert(params),
-  databaseURL: 'https://tweetr-api.firebaseio.com'
+  databaseURL: keys.fbDatabaseUrl
 });
 
 export default firebase.storage();

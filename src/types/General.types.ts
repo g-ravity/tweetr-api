@@ -4,7 +4,7 @@ export interface Keys {
   dbPassword: string;
   accessTokenSecret: string;
   firebaseStorageBucket: string;
-  firebaseStorageURL: string;
+  firebaseStorageUrl: string;
   firebaseToken: string;
   fbType: string;
   fbProjectId: string;
@@ -16,4 +16,5 @@ export interface Keys {
   fbTokenUri: string;
   fbAuthProvider: string;
   fbClientCert: string;
+  fbDatabaseUrl: string;
 }

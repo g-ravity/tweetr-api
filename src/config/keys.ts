@@ -6,7 +6,7 @@ const keys: Keys = {
   dbPassword: process.env.DB_PASSWORD,
   accessTokenSecret: process.env.ACCESS_SECRET_KEY,
   firebaseStorageBucket: process.env.FB_STORAGE_BUCKET,
-  firebaseStorageURL: process.env.FB_STORAGE_BASE_URL,
+  firebaseStorageUrl: process.env.FB_STORAGE_BASE_URL,
   firebaseToken: process.env.FB_TOKEN,
   fbType: process.env.FB_TYPE,
   fbProjectId: process.env.FB_PROJECT_ID,
@@ -17,7 +17,8 @@ const keys: Keys = {
   fbAuthUri: process.env.FB_AUTH_URI,
   fbTokenUri: process.env.FB_TOKEN_URI,
   fbAuthProvider: process.env.FB_AUTH_PROVIDER_CERT,
-  fbClientCert: process.env.FB_CLIENT_CERT
+  fbClientCert: process.env.FB_CLIENT_CERT,
+  fbDatabaseUrl: process.env.FB_DATABASE_URL
 };
 
 export default keys;
