@@ -40,7 +40,7 @@ mongoose
     useUnifiedTopology: true
   })
   .then(() => {
-    console.log('Conncted to MongoDB');
+    console.log('Connected to MongoDB');
     server.applyMiddleware({ app, path: server.graphqlPath });
     app.listen({ port: 4000 }, () => console.log(`Server ready at http://localhost:4000${server.graphqlPath}`));
   })

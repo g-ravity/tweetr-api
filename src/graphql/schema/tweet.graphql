@@ -1,7 +1,7 @@
 # GraphQL Input Types
 input TweetInput {
   text: String
-  imageURL: String
+  imageFile: Upload
 }
 
 # GraphQL Output Types
