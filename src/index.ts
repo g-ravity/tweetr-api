@@ -24,7 +24,9 @@ const schema = applyMiddleware(
 
 const server = new ApolloServer({
   schema,
-  context: (ctx): any => ({ ...ctx, handle: getUserHandle(ctx) })
+  context: (ctx): any => ({ ...ctx, handle: getUserHandle(ctx) }),
+  introspection: true,
+  playground: true
 });
 
 const dbConnectionString =
