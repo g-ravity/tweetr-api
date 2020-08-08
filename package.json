@@ -49,7 +49,7 @@
     "typescript": "^3.9.7"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,json,md}": [
+    "*.{ts,tsx,js,jsx,json,graphql,md}": [
       "prettier --write"
     ],
     "*.{ts,tsx,js,jsx}": [

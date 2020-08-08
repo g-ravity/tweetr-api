@@ -8,6 +8,8 @@ export interface UserArgs {
 
 export type IUser = Omit<UserArgs, 'password'>;
 
+export type UserHandle = Pick<UserArgs, 'handle'>;
+
 export interface UserWithToken {
   user: IUser;
   accessToken: string;

@@ -1,9 +1,13 @@
 import { login, signup } from '../../services/users/user.mutation';
+import { addTweet } from './../../services/tweets/tweet.mutation';
 
 const Mutation = {
-  // Auth Mutations
+  // User Mutations
   signup,
-  login
+  login,
+
+  // Tweet Mutations
+  addTweet
 };
 
 export default Mutation;

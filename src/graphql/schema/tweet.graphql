@@ -1,0 +1,18 @@
+# GraphQL Input Types
+input TweetInput {
+  text: String
+  imageURL: String
+}
+
+# GraphQL Output Types
+type Hashtag {
+  text: String!
+  indices: [Int!]!
+}
+
+type Tweet {
+  userHandle: String!
+  text: String!
+  hashtags: [Hashtag]!
+  imageURL: String
+}

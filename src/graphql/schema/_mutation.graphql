@@ -2,4 +2,7 @@ type Mutation {
   # Users Mutation
   signup(data: SignupUserInput!): UserWithToken!
   login(data: LoginUserInput!): UserWithToken!
+
+  #Tweet Mutation
+  addTweet(data: TweetInput!): Tweet!
 }

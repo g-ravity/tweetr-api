@@ -1,9 +1,9 @@
-import { IUser } from '../../types';
+import { IUser, UserHandle } from '../../types';
 import { findUserByHandle } from './user.repository';
 
-export const me = async (_: any, __: any, ctx: { userHandle: string }): Promise<IUser> => {
+export const me = async (_: any, __: any, ctx: UserHandle): Promise<IUser> => {
   try {
-    const user = await findUserByHandle(ctx.userHandle);
+    const user = await findUserByHandle(ctx.handle);
     delete user.password;
 
     if (user) return user;

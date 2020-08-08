@@ -5,6 +5,10 @@ const permissions = shield({
   Query: {
     // User Queries
     me: isAuthenticated
+  },
+  Mutation: {
+    // Tweet Mutations
+    addTweet: isAuthenticated
   }
 });
 
