@@ -1,4 +1,5 @@
 type Query {
   # User Queries
   me: User!
+  getCountry(text: String!): [Country]!
 }
